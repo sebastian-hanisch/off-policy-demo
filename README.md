@@ -1,7 +1,6 @@
 # Auswertung aus Logdaten: Off-Policy-Evaluation – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-off-policy-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-off-policy-demo.streamlit.app/)**
 
 Interaktive Demo zur **Bewertung einer nie gefahrenen Regel aus Logdaten**. **Zwölftes und letztes Stück der Konzepte-Linie
 „Experimente und Wirkungsmessung“** im Portfolio von [Sebastian Hanisch](https://sebastianhanisch.net) (Operations Research und
@@ -148,4 +147,4 @@ Gebaut mit Streamlit, Plotly, NumPy und SciPy (Verteilungsfunktionen).
 
 ---
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Experimente und Wirkungsmessung: A/B bis Logdaten](https://sebastianhanisch.net/konzepte-experimente-wirkungsmessung.html).
