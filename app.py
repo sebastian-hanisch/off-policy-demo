@@ -221,7 +221,7 @@ c10, c5 = by[(10, 0.5)], by[(5, 0.2)]
 st.info(
     f"Das Gewicht einer ganzen Trajektorie ist das Produkt der Wochen-Gewichte: seine Varianz wächst wie ρ^−H − 1. Bei ρ = 0,5 und "
     f"10 Wochen haben {C.fmt_pct(c10['no_hit'], 0)} der Datensätze keine einzige passende Trajektorie, bei ρ = 0,2 und 5 Wochen "
-    f"{C.fmt_pct(c5['no_hit'], 0)}. Die direkte Methode bleibt nutzbar, trägt aber einen **strukturellen** Fehler, weil sie "
+    f"{C.fmt_pct(c5['no_hit'], 0)}. Die direkte Methode bleibt nutzbar, hat aber einen **strukturellen** Fehler, weil sie "
     "die Nachwirkung des Bestands von Woche zu Woche nicht kennt."
 )
 
@@ -235,7 +235,7 @@ st.markdown(
 | **Überlappung: jede Aktion der neuen Regel kommt im Log vor** | Wählt das Protokoll eine Aktion nie, gibt es keine Zeile, die darüber etwas sagt; IPS und die Korrektur sind blind, und das Modell extrapoliert. | (dieses Stück) |
 | **Das Protokoll ist bekannt (protokollierte Wahrscheinlichkeiten)** | Ohne die Wahrscheinlichkeiten fehlen die Gewichte; sie müssen geschätzt werden, und der Fehler geht in jede Schätzung ein. | (dieses Stück) |
 | **Alle Einflüsse auf Aktion und Belohnung stehen im Kontext** | Verdeckte Einflüsse (etwa ein Disponent, der Sonderfälle anders fährt) machen jede Gewichtung schief; das ist mit Daten allein nicht prüfbar. | (dieses Stück) |
-| **Entscheidungen sind unabhängig** | Bestand und Pipeline tragen über Wochen; mehrstufige Gewichte werden unbrauchbar, und die direkte Methode trägt einen strukturellen Fehler. | (dieses Stück) |
+| **Entscheidungen sind unabhängig** | Bestand und Pipeline tragen über Wochen; mehrstufige Gewichte werden unbrauchbar, und die direkte Methode hat einen strukturellen Fehler. | (dieses Stück) |
 | **Ein Test, eine Kennzahl** | Mehrere Kennzahlen oder Zielregeln vervielfachen die Vergleiche. | Viele Kennzahlen: Mehrfachtests und Gewinnerfluch |
 """
 )
@@ -259,7 +259,7 @@ $1/\rho - 1$.
 undefiniert.
 
 **Direkte Methode.** $\hat V_{\mathrm{DM}} = \frac1N \sum_i \sum_a \pi^*(a|x_i)\, \hat q(x_i,a)$ mit einem Modell $\hat q$ der Belohnung.
-Streut wenig, trägt aber den ganzen Modellfehler.
+Streut wenig, hat aber den ganzen Modellfehler.
 
 **Doppelt robust.** $\hat V_{\mathrm{DR}} = \hat V_{\mathrm{DM}} + \frac1N \sum_i w_i\,(r_i - \hat q(x_i,a_i))$. Unverzerrt, wenn das Modell
 oder die Gewichte stimmen. Ist $\hat q$ saturiert (Zellmittel), verschwindet die Korrektur und DR = DM.

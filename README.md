@@ -53,7 +53,7 @@ mehrstufig 200 Datensätze mit je 2 000 Trajektorien). Belohnung in Punkten (Pro
 ## Befunde und Korrekturen gegenüber dem Plan
 
 - **Die Zielregel ist kaum besser als eine einfache Vergleichsregel.** Der Plan sprach von „Größe × Last“ als Wechselwirkung; die
-  Messung zeigt: die Größe spielt kaum eine Rolle, **Last × Aktion** trägt die Wechselwirkung. Der Abstand von 0,54 Punkten zur
+  Messung zeigt: die Größe spielt kaum eine Rolle, **Last × Aktion** macht die Wechselwirkung aus. Der Abstand von 0,54 Punkten zur
   besten konstanten Regel ist der Maßstab für jede Schätzung.
 - **Doppelt robust schützt vor einem schlechten Modell und zahlt mit Varianz.** Bei dünner Überlappung (ρ = 0,01) ist es **schlechter**
   als SNIPS, ab ρ = 0,05 gleichauf. Der Plan-Satz „doppelt robust ist robust“ steht deshalb nicht so im Text.
@@ -81,7 +81,7 @@ Modellannahme.
 ## Bezug zu OR
 
 Wer eine neue Disposition einführen will, hat Logdaten der alten, aber meist keine Möglichkeit, die neue ohne Risiko zu testen.
-Off-Policy-Evaluation sagt, wie weit diese Daten tragen: wenn die alte Regel die Aktionen der neuen oft genug gewählt hat und der
+Off-Policy-Evaluation sagt, wie weit diese Daten reichen: wenn die alte Regel die Aktionen der neuen oft genug gewählt hat und der
 Abstand größer ist als die Streuung der Schätzung. Sonst ist ein kleiner Test der ehrlichere Weg.
 
 ## Verwandte Demos im Portfolio
